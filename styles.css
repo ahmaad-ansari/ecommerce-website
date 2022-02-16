@@ -52,6 +52,10 @@ header {
 	width: 100%;
 }
 
+.container li {
+	cursor: pointer;
+}
+
 .nav-left li {
 /*	margin: 0 45px 0 0;*/
 	margin: 0 0 0 45px;
@@ -83,13 +87,13 @@ header {
 	margin-top: -18.2px;
 }
 
-#blank {
+.blank {
 	width: 20px;
 }
 
 #logo {
 	cursor: pointer;
-	margin-left: 10px;
+	margin-left: 25px;
 }
 
 #search, #dropdown, #logo, #account, #favourites, #cart {
@@ -123,11 +127,13 @@ ul {
 	width: 190px;
 	opacity: 0.5;
 	margin-top: -50px;
+	margin-left: -10px;
 }
 
 .banner-content h2 {
 	position: absolute;
 	font-family: Oswald;
+	text-align: center;
 	color: #ffffff;
 	font-size: 80px;
 	font-weight: 400;
@@ -139,6 +145,30 @@ ul {
 }
 
 /*HEADER==================================================================================*/
+
+/*DROPDOWN==================================================================================*/
+
+.dropdown-menu {
+	position: absolute;
+	margin: 0 2% 0 2%;
+	background-color: rgb(58, 84, 214);
+	opacity: 0.95;
+	height: 450px;
+	width: 96%;
+	filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.35));
+	z-index: 999;
+	display: none;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.dropdown-menu div {
+	width: 30%;
+	height: 100%;
+	
+}
+
+/*DROPDOWN==================================================================================*/
 
 .content {
 	width: 100%;
@@ -406,6 +436,98 @@ ul {
 	width: 100%;
 	position: relative;
 }
+
+.landing-page {
+	width: 100%;
+	background-color: rgb(58, 84, 214);
+	background-image: url("images/acer-aspire-7.jpg");
+	background-size: 100% auto; 
+	height: 800px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.tint {
+	background-color: rgba(58, 84, 214, 0.50); /* Tint color */
+  	background-blend-mode: multiply;
+}
+
+.left, .right {
+	width: 60px;
+	height: 60px;
+	margin: 100px;
+	border-radius: 50px;
+	background-color: transparent;
+	border: solid 1px #ffffff;
+	cursor: pointer;
+	transition: all 300ms ease-in-out;
+}
+
+.image {
+	position: absolute;
+	margin-left: 300px;
+}
+
+.image h2 {
+	font-family: Poppins;
+	color: #ffffff;
+	font-size: 100px;
+	font-weight: 700;
+	filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 1));
+}
+
+.image h3 {
+	font-family: Poppins;
+	color: #ffffff;
+	font-size: 60px;
+	font-weight: 300;
+	filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 1));
+}
+
+.left:hover, .right:hover {
+	background-color: rgb(221, 221, 221);
+	border: solid 1px rgb(221, 221, 221);
+	opacity: 0.95;
+}
+
+.left img{
+	position: relative;
+	margin-left: -5px;
+}
+
+.right img{
+	position: relative;
+	margin-right: -5px;
+}
+
+.dots {
+	width: 50px;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 1500px;
+	margin-top: 400px;
+}
+
+.dots div{
+	width: 10px;
+	height: 10px;
+	border-radius: 50px;
+}
+
+#dot-1 {
+	background-color: #ffffff;
+}
+
+#dot-2 {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+#dot-3 {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
 
 /*FOOTER==================================================================================*/
 
