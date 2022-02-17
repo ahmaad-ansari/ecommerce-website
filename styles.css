@@ -236,6 +236,13 @@ ul {
 .subcell {
 	width: 100%;
 	height: 100%;
+	cursor: pointer;
+	transition: all 300ms ease-in-out;
+}
+
+.subcell:hover {
+	background-color: rgba(185,185,185,0.25);
+	font-weight: 1000;
 }
 
 .product-content {
@@ -247,7 +254,6 @@ ul {
 }
 
 .product-image {
-	background-color: red;
 	width: 220px;
 	height: 164px;
 	margin-top: 40px;
@@ -290,8 +296,6 @@ ul {
 	font-size: 14px;
 	font-weight: 500;
 }
-
-
 
 .flex-left, .flex-right {
     width: 600px;
