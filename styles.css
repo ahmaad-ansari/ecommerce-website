@@ -440,8 +440,8 @@ ul {
 .landing-page {
 	width: 100%;
 	background-color: rgb(58, 84, 214);
-	background-image: url("images/acer-aspire-7.jpg");
-	background-size: 100% auto; 
+/*	background-image: url("images/acer-aspire-7.jpg");*/
+	background-size: 100%; 
 	height: 800px;
 	display: flex;
 	align-items: center;
@@ -449,7 +449,7 @@ ul {
 }
 
 .tint {
-	background-color: rgba(58, 84, 214, 0.50); /* Tint color */
+	background-color: rgba(58, 84, 214, 0.75); /* Tint color */
   	background-blend-mode: multiply;
 }
 
@@ -489,16 +489,6 @@ ul {
 	background-color: rgb(221, 221, 221);
 	border: solid 1px rgb(221, 221, 221);
 	opacity: 0.95;
-}
-
-.left img{
-	position: relative;
-	margin-left: -5px;
-}
-
-.right img{
-	position: relative;
-	margin-right: -5px;
 }
 
 .dots {
