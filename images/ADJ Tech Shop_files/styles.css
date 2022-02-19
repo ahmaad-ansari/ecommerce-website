@@ -17,10 +17,6 @@ body {
 /*	background-color: #fffefe;*/
 }
 
-button {
-	cursor: pointer;
-}
-
 /*HEADER==================================================================================*/
 
 .navbar {
@@ -203,173 +199,6 @@ ul {
     align-content: center;
     overflow: auto;
     flex-direction: row;
-}
-
-.flex-main {
-	width: 1200px;
-	height: 1800px;
-	background-color: white;
-	position: absolute;
-	margin-top: 1690px;
-	display: grid;
-	grid-template-rows: 1fr 1fr 1fr;
-}
-
-/*
-.container-1, .container-2, .container-3{
-	background-color: grey;
-	border: solid black;
-}
-*/
-
-.container-1 {
-	display: grid;
-	grid-template-columns: 25% 50% 25% ;
-}
-
-.sub-containers{
-	border-radius: 50px;
-	display: grid;
-	grid-template-rows: 50% 50%;
-	position: relative;
-}
-
-.large-content {
-	display: grid;
-}
-
-.subcell {
-	width: 100%;
-	height: 100%;
-	cursor: default;
-	transition: all 300ms ease-in-out;
-	position: relative;
-}
-
-.cell-hover {
-	width: 100%;
-	height: 100%;
-	background-color: rgb(58, 84, 214);
-	position: absolute;
-	opacity: 0;
-    transition: all 300ms ease-in-out;
-	z-index: 999;
-	display: flex;
-	justify-content: flex-start;
-	padding: 30px;
-}
-
-.large-content .add-to-cart, .large-content .add-to-favourites {
-	margin-top: 78%;
-}
-
-.cell-hover:hover{
-	opacity: 0.95;
-/*	opacity: 0.5;*/
-}
-
-.cell-hover:hover + .product-content>.product-text h2 {
-	position: relative;
-	z-index: 999;
-	color: white;
-}
-
-.add-to-cart {
-	width: 130px;
-	height: 50px;
-	background-color: white;
-  	border: none;
-	border-radius: 50px;
-	margin-top: 50%;
-	vertical-align: middle;
-	box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
-	margin-right: 15px;
-}
-
-.add-to-cart img, .add-to-favourites img {
-	vertical-align: middle;
-}
-
-.add-to-cart h2 {
-	font-family: Poppins;
-	color: black;
-	font-size: 14px;
-	font-weight: 500;
-	display: inline;
-	margin-left: 5px;
-}
-
-.add-to-cart:active {
-	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.25);
-}
-
-.add-to-favourites:active {
-	box-shadow: inset 0px 0px 10px rgba(255,255,255,0.1);
-}
-
-.add-to-favourites {
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	background-color: rgba(255, 255, 255, 0.1);
-	box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
-  	border: none;
-	margin-top: 50%;
-}
-
-.product-content {
-	display: grid;
-	position: relative;
-	grid-template-rows: 70% 30%;
-	align-content: center;
-	justify-content: center;
-	pointer-events: none;
-}
-
-.product-image {
-	width: 220px;
-	height: 164px;
-	margin-top: 40px;
-}
-
-.large-content .product-image {
-	height: 460px;
-	width: 520px;
-}
-
-.product-image img {
-	width: 100%;
-	height: 100%;	
-}
-
-.product-text {
-	margin-top: 30px;
-	text-align: left;
-	position: relative;
-	height: 40px;
-}
-
-.large-content .product-text {
-	margin-top: 522px;
-	margin-left: 40px;
-	text-align: left;
-	position: absolute;
-}
-
-.product-name {
-	font-family: Oswald;
-	color: #111111;
-	font-size: 17px;
-	font-weight: 400;
-	transition: all 300ms ease-in-out;
-}
-
-.product-price {
-	font-family: Poppins;
-	color: #2344e8;
-	font-size: 14px;
-	font-weight: 500;
-	transition: all 300ms ease-in-out;
 }
 
 .flex-left, .flex-right {
@@ -608,25 +437,19 @@ ul {
 	position: relative;
 }
 
-.index {
-	height: 1745px;
-	width: 100%;
-	position: relative;
-}
-
 .landing-page {
 	width: 100%;
 	background-color: rgb(58, 84, 214);
+/*	background-image: url("images/acer-aspire-7.jpg");*/
 	background-size: 100%; 
 	height: 800px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	z-index: -999;
 }
 
 .tint {
-	background-color: rgba(58, 84, 214, 0.75);
+	background-color: rgba(58, 84, 214, 0.75); /* Tint color */
   	background-blend-mode: multiply;
 }
 
