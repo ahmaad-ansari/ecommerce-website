@@ -18,8 +18,8 @@ function toggleMenu() {
 
 let sliderImages = document.querySelectorAll('.image');
 let image = document.querySelector('#landing-page');
-let arrowLeft = document.querySelector('#left-button');
-let arrowRight = document.querySelector('#right-button');
+let arrowLeft = document.querySelector('.left');
+let arrowRight = document.querySelector('.right');
 let imageArray = ['images/acer-aspire-7.jpg', 'images/apple-iphone-13.jpg', 'images/sony-playstation-5.jpg'];
 let dots = document.querySelectorAll('.dot');
 let current = 0;
@@ -28,7 +28,7 @@ let current = 0;
 function reset(){
 	for(let i = 0; i < sliderImages.length; i++){
 		sliderImages[i].style.display = 'none';
-		dots[i].style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+		dots[i].style.backgroundColor = "rgba(255, 255, 255, 0.4)";
 	}
 }
 // Initializes slider
