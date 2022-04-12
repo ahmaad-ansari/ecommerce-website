@@ -118,6 +118,14 @@ ul {
 	list-style: none;
 }
 
+#displayUsername {
+	position: absolute;
+	margin-left: -100px;
+	color: #FFFFFF;
+	font-family: Montserrat;
+	font-size: 20px;
+}
+
 .banner-content {
 	width: 100%;
 	background-color: rgb(58, 84, 214);

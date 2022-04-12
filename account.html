@@ -16,13 +16,23 @@
 				<div class="left">
 					<div class="top_link"><a href="index.html"><img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" alt="">Return home</a></div>
 					<div class="contact">
-						<form action="">
+						<form name="loginForm" method="POST" action="index.html">
 							<h3>SIGN IN</h3>
-							<input type="text" placeholder="USERNAME">
-							<input type="text" placeholder="PASSWORD">
-							<button class="submit">LET'S GO</button>
+							<input type="text" placeholder="USERNAME" name="username" id="username">
+							<input type="text" placeholder="PASSWORD" name="password" id="password">
+							<button class="submit" onclick="login(loginForm)">LET'S GO</button>
 							<h6>Don't have an account? <a href=""><span>Sign Up</span></a></h6>	
 						</form>
+						
+						<script>
+							function login(loginForm){
+								localStorage.clear();
+								var username = document.getElementById("username").value;
+								localStorage.setItem("username", username);
+								return;
+							}
+						</script>
+						
 					</div>
 				</div>
 				<div class="right">
